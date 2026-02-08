@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* =====================
+   TEMA CLARO (PADRÃO)
+===================== */
+:root {
+  --bg-primary: #f5f7fb;
+  --bg-secondary: #ffffff;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+
+  --header-primary: #f0f0f0;
+  --header-secondary: #ffffff;
+  --header-text: #0f172a;
+
+  --btn-primary: #f5f5f5;
+
+  --card-bg: #ffffff;
+  --border-color: #dce1e8;
+
+  --accent: #007aff;
+  --switch-thumb-color: #363538;
+
+  --theme-switch: #d8d8d8;
+
+}
+
+/* =====================
+   TEMA ESCURO
+===================== */
+[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #161b22;
+
+  --text-primary: #e6e6e6;
+  --text-secondary: #9ca3af;
+
+  --header-primary: #0d1117;
+  --header-secondary: #121e39;
+  --header-text: #e6e6e6;
+
+  --btn-primary: #f5f5f5;
+
+  --card-bg: #161b22;
+  --border-color: #2a2f3a;
+
+  --accent: #007aff;
+  --switch-thumb-color: #363538;
+
+  --theme-switch: #9ca3af;
+}
+
+/* =====================
+   BASE
+===================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  padding-top: 80px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+/* =====================
+   HEADER (CORRIGIDO)
+===================== */
+header {
+  background: var(--header-primary);
+  color: var(--header-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 80px; */
+  padding: 1.5rem;
+}
+
+/* =====================
+   MENU
+===================== */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 28px;
+  height: 3px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.nav {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  background: var(--header-primary);
+  display: none;
+  z-index: 1100;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav li {
+  border-top: 1px solid var(--border-color);
+}
+
+.nav a {
+  display: block;
+  padding: 15px;
+  color: var(--header-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav.active {
+  display: block;
+}
+
+/* =====================
+   SWITCH DE TEMA
+===================== */
+.theme-switch {
+  width: 44px;
+  height: 20px;
+  border-radius: 50px;
+  border: 1px solid var(--switch-thumb-color);
+  position: relative;
+  cursor: pointer;
+  background-color: var(--theme-switch);
+}
+
+.switch-thumb {
+  width: 15px;
+  height: 15px;
+  background-color: var(--switch-thumb-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease;
+}
+
+[data-theme="dark"] .switch-thumb {
+  left: 25px;
+}
+
+/* =====================
+   BOTÕES
+===================== */
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.section {
+  padding: 3rem 0;
+}
+
+.section-dark {
+  background: var(--bg-secondary);
+}
+
+.hero button {
+  background-color: var(--accent);
+  padding: 12px;
+  color: var(--btn-primary);
+  border-radius: 12px;
+  border: 1px solid var(--header-primary);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.hero a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  min-height: 50vh;              
+  display: flex;
+  align-items: center;            
+}
+
+.hero .container {
+  text-align: center;             
+}
+
+hero h1 {
+  align-items: center;
+
+}
+
+
+
