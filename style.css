@@ -81,7 +81,7 @@ body {
 
 .container {
   width: 100%;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   margin: auto;
 }
 
@@ -192,7 +192,7 @@ header {
   top: 50%;
   left: 3px;
   transform: translateY(-50%);
-  transition: left 0.3s ease;
+  transition: left 0.3s ease, 0.3s ease;
 }
 
 [data-theme="dark"] .switch-thumb {
