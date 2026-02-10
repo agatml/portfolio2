@@ -33,13 +33,14 @@ h1 {
 
   --btn-primary: #f5f5f5;
 
-  --card-bg: #ffffff;
-  --border-color: #dce1e8;
+  --card-bg: #e1e1e1;
+  --border-color: #bdc0c5;
 
   --accent: #007aff;
   --switch-thumb-color: #363538;
 
   --theme-switch: #d8d8d8;
+
 
 }
 
@@ -59,8 +60,8 @@ h1 {
 
   --btn-primary: #f5f5f5;
 
-  --card-bg: #161b22;
-  --border-color: #2a2f3a;
+  --card-bg: #111827;
+  --border-color: #1f2937;
 
   --accent: #007aff;
   --switch-thumb-color: #363538;
@@ -82,7 +83,7 @@ body {
 .container {
   width: 100%;
   padding: 2rem 1rem;
-  margin: auto;
+  /* margin: auto; */
 }
 
 /* =====================
@@ -250,6 +251,36 @@ hero h1 {
   align-items: center;
 
 }
+
+
+
+.card {
+  border: 2px solid var(--border-color);
+  background-color: var(--card-bg);
+  border-radius: 8px;
+}
+
+.card img {
+   display: block;
+  margin: 0 auto;
+  max-height: 250px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card h4 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.card p {
+  display: flex;
+  padding: 1rem;
+}
+
+
 
 
 
