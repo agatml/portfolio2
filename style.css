@@ -253,11 +253,11 @@ hero h1 {
 }
 
 
-
 .card {
   border: 2px solid var(--border-color);
   background-color: var(--card-bg);
   border-radius: 8px;
+  margin-top: 20px;
 }
 
 .card img {
@@ -279,6 +279,7 @@ hero h1 {
   display: flex;
   padding: 1rem;
 }
+
 
 
 
