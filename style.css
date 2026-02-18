@@ -315,7 +315,7 @@ display: flex;
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: 14px;
-  padding: 1.8rem;
+  padding: 1.4rem;
   color: var(--accent);
   transition: 0.3s ease;
    margin-top: 20px;
@@ -335,13 +335,13 @@ display: flex;
 }
 
 .skill-header h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 .skill-level {
   background: var(--header-text);
-  padding: 0.3rem 0.7rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 500;
