@@ -284,30 +284,6 @@ hero h1 {
   display: flex;
   padding: 1rem;
 }
-/* 
-.card-hab {
-  background-color: var(--card-bg);
-  border: 2px solid var(--border-color);
-  min-height: 20px;
-  border-radius: 8px;
-  padding: 0.2rem;
-  margin-top: 20px;
-display: flex;
-}
-
-#habilidades i {
-  color: var(--accent);
-  font-size: 2rem;
-}
-
-
-#habilidades p {
-  font-size: 17px;
-} */
-
-
-
-
 
 
 .skill-card {
@@ -369,5 +345,56 @@ display: flex;
 }
 
 
+#contato a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+#contato .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; 
+  font-size: 1.5rem;
+  padding: 3rem;
+  color: var(--accent);
+}
+
+
+footer {
+  background: var(--header-primary);
+  color: var(--text);
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  
+}
+
+footer p,
+footer small {
+  margin: 0.3rem 0;
+}
+
+footer .socials {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+footer .socials a {
+  font-size: 1rem;
+  color: var(--header-text);
+  transition: 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+    
 
 
