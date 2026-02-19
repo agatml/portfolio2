@@ -1,47 +1,59 @@
-const toggleButton = document.getElementById('theme-toggle');
-const rootElement = document.documentElement;
+document.addEventListener("DOMContentLoaded", function () {
 
-toggleButton.addEventListener('click', () => {
-    const isDark = rootElement.getAttribute('data-theme') === 'dark';
+  const rootElement = document.documentElement;
 
-    if (isDark) {
+  // ===== THEME TOGGLE =====
+  const toggleButton = document.getElementById('theme-toggle');
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+      const isDark = rootElement.getAttribute('data-theme') === 'dark';
+
+      if (isDark) {
         rootElement.removeAttribute('data-theme');
         localStorage.removeItem('theme');
-
-    }
-    else {
+      } else {
         rootElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
-    }
-});
+      }
+    });
+  }
 
-document.addEventListener("DOMContentLoaded", function () {
+  // ===== HEADER SCROLL =====
+  let lastScroll = 0;
+  const header = document.querySelector("header");
+
+  if (header) {
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll && currentScroll > 80) {
+        header.classList.add("header-hidden");
+      } else {
+        header.classList.remove("header-hidden");
+      }
+
+      lastScroll = currentScroll;
+    });
+  }
+
+  // ===== MENU =====
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav");
+  const navLinks = document.querySelectorAll(".nav a");
 
   if (toggle && nav) {
+
     toggle.addEventListener("click", function () {
       nav.classList.toggle("active");
     });
-  }
-});
 
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
+    });
 
-// header
-let lastScroll = 0;
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-
-  // Rolando para baixo → esconde
-  if (currentScroll > lastScroll && currentScroll > 80) {
-    header.classList.add("header-hidden");
-  } 
-  // Rolando para cima → mostra
-  else {
-    header.classList.remove("header-hidden");
   }
 
-  lastScroll = currentScroll;
 });

@@ -114,6 +114,11 @@ header {
   padding: 1.5rem;
 }
 
+header {
+  transition: transform 0.3s ease;
+}
+
+
 /* =====================
    MENU
 ===================== */
@@ -136,7 +141,7 @@ header {
 
 .nav {
   position: absolute;
-  top: 80px;
+  top: 100%;
   right: 0;
   width: 100%;
   background: var(--header-primary);
