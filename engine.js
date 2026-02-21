@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (toggle && nav) {
 
     toggle.addEventListener("click", function () {
-      nav.classList.toggle("active");
+      const isActive = nav.classList.toggle("active");
+      toggle.setAttribute("aria-expanded", isActive);
     });
 
     navLinks.forEach(link => {
