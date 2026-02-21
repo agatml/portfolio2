@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach(link => {
       link.addEventListener("click", () => {
         nav.classList.remove("active");
+         toggle.setAttribute("aria-expanded", "false");
       });
     });
 

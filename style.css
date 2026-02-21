@@ -227,14 +227,15 @@ header {
   background: var(--bg-secondary);
 }
 
-.hero button {
+.hero .btn-proj {
   background-color: var(--accent);
-  padding: 12px;
+  padding: 10px;
   color: var(--btn-primary);
   border-radius: 12px;
   border: 1px solid var(--header-primary);
   font-weight: bold;
-  margin-top: 1rem;
+  
+  
 }
 
 .hero a {
@@ -245,17 +246,15 @@ header {
 .hero {
   min-height: 50vh;              
   display: flex;
-  align-items: center;            
+  align-items: center;  
+  text-align: center; 
+         
 }
 
-.hero .main {
-  text-align: center;             
+.hero p {
+  margin-bottom: 20px;
 }
 
-hero h1 {
-  align-items: center;
-
-}
 
 
 .card {
@@ -396,10 +395,16 @@ footer .socials a {
 }
 
 footer .socials a:hover {
-  color: var(--primary);
+  color: var(--accent);
   transform: translateY(-3px);
 }
 
     
 
 
+
+
+
+
+@media (min-width: 768px) { }
+@media (min-width: 1024px) { }
