@@ -17,9 +17,7 @@ h1 {
     "wdth" 100;
 }
 
-/* =====================
-   TEMA CLARO (PADRÃO)
-===================== */
+
 :root {
   --bg-primary: #f5f7fb;
   --bg-secondary: #ffffff;
@@ -44,9 +42,7 @@ h1 {
 
 }
 
-/* =====================
-   TEMA ESCURO
-===================== */
+
 [data-theme="dark"] {
   --bg-primary: #0f172a;
   --bg-secondary: #161b22;
@@ -69,9 +65,7 @@ h1 {
   --theme-switch: #9ca3af;
 }
 
-/* =====================
-   BASE
-===================== */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--bg-primary);
@@ -83,12 +77,9 @@ body {
 .main {
   width: 100%;
   padding: 2rem 1rem;
-  /* margin: auto; */
+  
 }
 
-/* =====================
-   HEADER (CORRIGIDO)
-===================== */
 header {
   background: var(--header-primary);
   color: var(--header-text);
@@ -110,7 +101,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 80px; */
+  
   padding: 1.5rem;
 }
 
@@ -119,9 +110,7 @@ header {
 }
 
 
-/* =====================
-   MENU
-===================== */
+
 .menu-toggle {
   background: none;
   border: none;
@@ -176,9 +165,7 @@ header {
   display: block;
 }
 
-/* =====================
-   SWITCH DE TEMA
-===================== */
+
 .theme-switch {
   width: 44px;
   height: 20px;
@@ -205,9 +192,7 @@ header {
   left: 25px;
 }
 
-/* =====================
-   BOTÕES
-===================== */
+
 .btn-primary {
   background: var(--accent);
   color: #fff;
@@ -216,9 +201,7 @@ header {
   border-radius: 4px;
 }
 
-/* =====================
-   SECTIONS
-===================== */
+
 .section {
   padding: 3rem 0;
 }

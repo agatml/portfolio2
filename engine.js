@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const rootElement = document.documentElement;
 
-  // ===== THEME TOGGLE =====
+
   const toggleButton = document.getElementById('theme-toggle');
 
   if (toggleButton) {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ===== HEADER SCROLL =====
+
   let lastScroll = 0;
   const header = document.querySelector("header");
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ===== MENU =====
+ 
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav");
   const navLinks = document.querySelectorAll(".nav a");
