@@ -269,7 +269,7 @@ header {
 
 .card p {
   display: flex;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 
@@ -302,12 +302,19 @@ header {
   font-weight: 600;
 }
 
+.skill-test {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .skill-level {
-  background: var(--header-text);
-  padding: 0.3rem 0.6rem;
+color: var(--accent);
+  padding: 20px;
+  
   border-radius: 20px;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: bolder;
+  
 }
 
 .skill-list {
